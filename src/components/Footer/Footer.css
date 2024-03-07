@@ -1,0 +1,50 @@
+.Footer-container {
+    position: relative;
+}
+
+.Footer-container>hr {
+    border: 1px solid var(--lightgray);
+}
+
+.footer {
+    padding: 1rem 2rem;
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.social-links>img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.logo-f>img {
+    width: 10rem;
+}
+
+.Footer-blur-1{
+    width: 23rem;
+    height: 12rem;
+    background: red;
+    filter: blur(200px);
+    bottom: 0;
+    right: 15%;
+}
+
+.Footer-blur-2{
+    width: 23rem;
+    height: 12rem;
+    background: rgb(255, 115, 0);
+    filter: blur(200px);
+    bottom: 0;
+    left: 15%;
+}

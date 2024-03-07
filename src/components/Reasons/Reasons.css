@@ -1,0 +1,116 @@
+.Reasons {
+    display: flex;
+    padding: 0 2rem;
+    gap: 2rem;
+}
+
+.left-r {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    flex: 1 1;
+}
+
+.left-r>img {
+    object-fit: cover;
+}
+
+.left-r>:nth-child(1) {
+    width: 12rem;
+    height: 28rem;
+    grid-row: 1/3;
+}
+
+.left-r>:nth-child(2) {
+    width: auto;
+    height: 16rem;
+    grid-column: 2/4;
+}
+
+.left-r>:nth-child(3) {
+    width: 14rem;
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.left-r>:nth-child(4) {
+    width: 10rem;
+    height: 11.2rem;
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+.rigth-r {
+    flex: 1 1;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.rigth-r>span {
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.rigth-r>div {
+    font-weight: bold;
+    color: white;
+    font-size: 3rem;
+}
+
+.detail-r {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-r>div {
+    font-size: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.detail-r>div>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.patners {
+    display: flex;
+    gap: 1rem;
+}
+
+.patners>img {
+    width: 2.5rem;
+}
+
+@media screen and (max-width:768px) {
+    .Reasons {
+        margin-top: -3rem;
+        flex-direction: column;
+    }
+
+    .left-r{
+        grid-auto-rows: auto;
+        overflow: hidden;
+        gap: 0.5rem;
+    }
+    .left-r>img:nth-of-type(1){
+        width: 7rem;
+        height: 17rem;
+    }
+    .left-r>img:nth-of-type(2){
+        width: 8rem;
+        height: 10rem;
+    }
+    .left-r>img:nth-of-type(3){
+        width: 4rem;
+        height: 6rem;
+    }
+    .left-r>img:nth-of-type(4){
+        width: 4rem;
+        height: 6rem;
+    }
+}
